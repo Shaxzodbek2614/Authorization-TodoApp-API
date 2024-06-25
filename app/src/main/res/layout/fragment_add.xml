@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".fragments.AddFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/liner_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#009688">
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Notes"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="10dp"
+        android:background="@drawable/edit_register"/>
+    <EditText
+        android:id="@+id/deck"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="top"
+        android:padding="10dp"
+        android:hint="Description"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_register"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Date"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/edit_register"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_gravity="end"
+        android:backgroundTint="#009688"
+        android:id="@+id/btn_save"
+        android:layout_marginBottom="10dp"
+        android:text="Save"
+        android:layout_marginEnd="10dp"/>
+
+
+</LinearLayout>
